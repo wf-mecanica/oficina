@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Agendamento - WF Mecânica</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+<img src="/mnt/data/logo.png" class="logo" alt="Logo">
+<h1>Agendamento</h1>
+</header>
+
+<nav class="menu">
+<a href="index.html">Início</a>
+<a href="servicos.html">Serviços</a>
+<a href="agendamento.html">Agendamento</a>
+<a href="contato.html">Contato</a>
+</nav>
+
+<main class="container">
+<div class="info-box">
+<h2>Agende um serviço</h2>
+<p>Escolha data e horário; confirmamos por WhatsApp.</p>
+<p><strong>Endereço:</strong> Rua da Gasolina, 304 — Petrolândia, Contagem – MG</p>
+</div>
+
+<form class="form-box" action="#" method="POST">
+<label>Nome Completo</label>
+<input type="text" name="nome" required>
+
+<label>Telefone / WhatsApp</label>
+<input type="tel" name="telefone" required>
+
+<label>Serviço Desejado</label>
+<select name="servico" required>
+<option>Revisão Completa</option>
+<option>Troca de Óleo</option>
+<option>Diagnóstico</option>
+<option>Freios e Suspensão</option>
+</select>
+
+<label>Data</label>
+<input type="date" name="data" required>
+
+<label>Horário (preferência)</label>
+<input type="time" name="hora">
+
+<button class="btn" type="submit">Enviar Agendamento</button>
+</form>
+</main>
+
+<footer class="site-footer">
+<p>Rua da Gasolina, 304 — Petrolândia, Contagem – MG</p>
+<p>© 2025 WF Mecânica Automotiva</p>
+</footer>
+</body>
+</html>
