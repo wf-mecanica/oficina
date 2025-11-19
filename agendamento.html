@@ -5,11 +5,33 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Agendamento - WF Mecânica</title>
 <link rel="stylesheet" href="style.css">
+<script>
+function enviarWhatsApp(event) {
+event.preventDefault();
+
+let nome = document.getElementById("nome").value;
+let telefone = document.getElementById("telefone").value;
+let servico = document.getElementById("servico").value;
+let data = document.getElementById("data").value;
+let hora = document.getElementById("hora").value;
+
+let msg = `Olá, quero agendar um serviço na WF Mecânica:%0A%0A` +
+`👤 Nome: ${nome}%0A` +
+`📞 Telefone: ${telefone}%0A` +
+`🔧 Serviço: ${servico}%0A` +
+`📅 Data: ${data}%0A` +
+`⏰ Horário: ${hora}%0A`;
+
+let url = `https://wa.me/5531993957145?text=${msg}`;
+
+window.open(url, "_blank");
+}
+</script>
 </head>
 <body>
 
 <header class="site-header">
-<img src="/mnt/data/logo.png" class="logo" alt="Logo">
+<img src="logo.png" class="logo" alt="Logo">
 <h1>Agendamento</h1>
 </header>
 
@@ -23,19 +45,18 @@
 <main class="container">
 <div class="info-box">
 <h2>Agende um serviço</h2>
-<p>Escolha data e horário; confirmamos por WhatsApp.</p>
-<p><strong>Endereço:</strong> Rua da Gasolina, 304 — Petrolândia, Contagem – MG</p>
+<p>O atendimento será confirmado via WhatsApp.</p>
 </div>
 
-<form class="form-box" action="#" method="POST">
+<form class="form-box" onsubmit="enviarWhatsApp(event)">
 <label>Nome Completo</label>
-<input type="text" name="nome" required>
+<input id="nome" type="text" required>
 
 <label>Telefone / WhatsApp</label>
-<input type="tel" name="telefone" required>
+<input id="telefone" type="tel" required>
 
 <label>Serviço Desejado</label>
-<select name="servico" required>
+<select id="servico" required>
 <option>Revisão Completa</option>
 <option>Troca de Óleo</option>
 <option>Diagnóstico</option>
@@ -43,12 +64,12 @@
 </select>
 
 <label>Data</label>
-<input type="date" name="data" required>
+<input id="data" type="date" required>
 
-<label>Horário (preferência)</label>
-<input type="time" name="hora">
+<label>Horário (opcional)</label>
+<input id="hora" type="time">
 
-<button class="btn" type="submit">Enviar Agendamento</button>
+<button class="btn" type="submit">Enviar pelo WhatsApp</button>
 </form>
 </main>
 
@@ -56,5 +77,6 @@
 <p>Rua da Gasolina, 304 — Petrolândia, Contagem – MG</p>
 <p>© 2025 WF Mecânica Automotiva</p>
 </footer>
+
 </body>
 </html>
