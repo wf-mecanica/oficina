@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WF Mecânica Automotiva</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">WF Mecânica Automotiva</div>
+        <a class="btn-whatsapp" href="https://wa.me/5531993957145" target="_blank">WhatsApp</a>
+    </header>
+
+    <section class="hero">
+        <h1>Serviços Automotivos com Qualidade e Confiança</h1>
+        <p>Cuidamos do seu carro como se fosse nosso.</p>
+        <a href="https://wa.me/5531993957145" class="btn-hero" target="_blank">Agendar Serviço</a>
+    </section>
+
+    <section class="sobre">
+        <h2>Sobre Nós</h2>
+        <p>
+            A <strong>WF Mecânica Automotiva</strong> oferece serviços completos de manutenção e reparos,
+            sempre com transparência, qualidade e compromisso com o cliente.
+        </p>
+    </section>
+
+    <section class="servicos">
+        <h2>Serviços</h2>
+        <ul>
+            <li>Mecânica geral</li>
+            <li>Troca de óleo e filtros</li>
+            <li>Revisão completa</li>
+            <li>Suspensão e freios</li>
+            <li>Injeção eletrônica</li>
+            <li>Scanner automotivo</li>
+            <li>Ar-condicionado</li>
+            <li>Elétrica automotiva</li>
+        </ul>
+    </section>
+
+    <section class="contato">
+        <h2>Contato</h2>
+        <p><strong>Endereço:</strong> Rua da Gasolina, 304</p>
+        <p><strong>WhatsApp:</strong> (31) 99395-7145</p>
+        <a class="btn-contato" href="https://wa.me/5531993957145" target="_blank">Falar no WhatsApp</a>
+    </section>
+
+    <footer>
+        <p>CNPJ: 49.728.613/0001-39</p>
+        <p>© 2025 WF Mecânica Automotiva - Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>
