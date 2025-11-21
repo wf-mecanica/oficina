@@ -138,3 +138,19 @@ select {
   .logo { width: 140px; }
   .hero h2 { font-size: 20px; }
 }
+.button-group {
+display: flex;
+justify-content: center;
+gap: 14px;
+margin-top: 16px;
+}
+
+.instagram {
+background: var(--accent);
+color: #000;
+}
+
+.instagram:hover {
+background: #000;
+color: var(--accent);
+}
