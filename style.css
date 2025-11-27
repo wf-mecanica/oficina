@@ -171,4 +171,25 @@ font-size: 20px;
 color: var(--muted);
 margin: 0 12px 14px;
 }
+/* Caixa da logo grande */
+.hero-logo-box {
+text-align: center;
+margin-top: 20px;
+margin-bottom: 20px;
+}
 
+/* Frase acima da logo */
+.slogan {
+font-size: 28px;
+font-weight: bold;
+color: #FFD000; /* Amarelo padrão */
+margin-bottom: 10px;
+text-transform: uppercase;
+letter-spacing: 1px;
+}
+
+/* Logo maior */
+.logo-grande {
+width: 260px; /* Pode aumentar para 300 ou 350 se quiser */
+max-width: 90%;
+}
