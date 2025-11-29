@@ -1,87 +1,88 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Agendamento - WF Mecânica</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Agendamento - WF Mecânica</title>
+  <link rel="stylesheet" href="style.css">
 
-<script>
-function enviarWhatsApp(event) {
-event.preventDefault();
+  <script>
+    function enviarWhatsApp(event) {
+      event.preventDefault();
 
-let nome = document.getElementById("nome").value;
-let telefone = document.getElementById("telefone").value;
-let servico = document.getElementById("servico").value;
-let data = document.getElementById("data").value;
-let hora = document.getElementById("hora").value;
+      let nome = document.getElementById("nome").value;
+      let telefone = document.getElementById("telefone").value;
+      let servico = document.getElementById("servico").value;
+      let data = document.getElementById("data").value;
+      let hora = document.getElementById("hora").value;
 
-let texto = `Olá, gostaria de agendar:%0A%0A` +
-`👤 Nome: ${nome}%0A` +
-`📞 Telefone: ${telefone}%0A` +
-`🔧 Serviço: ${servico}%0A` +
-`📅 Data: ${data}%0A` +
-`⏰ Horário: ${hora}`;
+      let texto = 
+        Olá, gostaria de agendar:%0A%0A +
+        👤 Nome: ${nome}%0A +
+        📞 Telefone: ${telefone}%0A +
+        🔧 Serviço: ${servico}%0A +
+        📅 Data: ${data}%0A +
+        ⏰ Horário: ${hora};
 
-window.open(`https://wa.me/5531993957145?text=${texto}`, "_blank");
-}
-</script>
+      window.open(https://wa.me/5531993957145?text=${texto}, "_blank");
+    }
+  </script>
 </head>
 
 <body>
 
 <header class="site-header">
-<img src="logo.png" class="logo">
-<h1>Agendamento</h1>
+  <img src="logo.png" class="logo">
+  <h1>Agendamento</h1>
 </header>
 
 <nav class="menu">
-<a href="index.html">Início</a>
-<a href="servicos.html">Serviços</a>
-<a href="sobre.html">Sobre Nós</a>
-<a href="localizacao.html">Localização</a>
-<a href="contato.html">Contato</a>
-<a href="agendamento.html">Agendamento</a>
-<a href="blog.html">Blog</a>
-<a href="depoimentos.html">Depoimentos</a>
-<a href="promocoes.html">Promoções</a>
+  <a href="index.html">Início</a>
+  <a href="servicos.html">Serviços</a>
+  <a href="sobre.html">Sobre Nós</a>
+  <a href="localizacao.html">Localização</a>
+  <a href="contato.html">Contato</a>
+  <a href="agendamento.html">Agendamento</a>
+  <a href="promocoes.html">Promoções</a>
 </nav>
 
 <main class="container">
 
-<div class="info-box">
-<h2>Agendar Serviço</h2>
-<p>Preencha e enviaremos direto para o WhatsApp.</p>
-</div>
+  <div class="info-box">
+    <h2>Agendar Serviço</h2>
+    <p>Preencha os dados abaixo e o agendamento será enviado para o WhatsApp.</p>
+  </div>
 
-<form class="form-box" onsubmit="enviarWhatsApp(event)">
-<label>Nome</label>
-<input id="nome" type="text" required>
+  <form class="form-box" onsubmit="enviarWhatsApp(event)">
 
-<label>Telefone</label>
-<input id="telefone" type="tel" required>
+    <label>Nome</label>
+    <input id="nome" type="text" required>
 
-<label>Serviço</label>
-<select id="servico" required>
-<option>Revisão Completa</option>
-<option>Troca de Óleo</option>
-<option>Freios e Suspensão</option>
-<option>Diagnóstico</option>
-</select>
+    <label>Telefone</label>
+    <input id="telefone" type="tel" required>
 
-<label>Data</label>
-<input id="data" type="date" required>
+    <label>Serviço</label>
+    <select id="servico" required>
+      <option>Revisão Completa</option>
+      <option>Troca de Óleo</option>
+      <option>Injeção Eletrônica</option>
+      <option>Freios e Suspensão</option>
+      <option>Diagnóstico</option>
+    </select>
 
-<label>Horário</label>
-<input id="hora" type="time">
+    <label>Data</label>
+    <input id="data" type="date" required>
 
-<button class="btn" type="submit">Enviar pelo WhatsApp</button>
-</form>
+    <label>Horário</label>
+    <input id="hora" type="time" required>
+
+    <button class="btn" type="submit">Enviar pelo WhatsApp</button>
+  </form>
 
 </main>
 
 <footer class="site-footer">
-<p>Rua da Gasolina, 304 — Petrolândia, Contagem – MG</p>
+  <p>Rua da Gasolina, 304 — Petrolândia, Contagem – MG</p>
 </footer>
 
 </body>
