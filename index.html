@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>WF Super Compras - Centro de Contagem</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header class="top">
+    <div class="logo">
+      <h1>WF Super Compras</h1>
+      <p>Centro de Contagem • Pagamento na entrega</p>
+    </div>
+
+    <div class="search-box">
+      <input id="search" type="text" placeholder="Buscar produto..." />
+    </div>
+
+    <button class="cart-btn" onclick="toggleCart()">
+      🛒 Carrinho (<span id="cartCount">0</span>)
+    </button>
+  </header>
+
+  <main>
+    <section class="banner">
+      <h2>Compre online e receba em casa</h2>
+      <p>Pagamento na entrega (Pix / Dinheiro / Cartão)</p>
+      <a class="whats-btn" href="https://wa.me/5531993957145" target="_blank">
+        📲 Falar no WhatsApp
+      </a>
+    </section>
+
+    <section class="categories" id="categories"></section>
+
+    <section>
+      <h3 class="title">🛒 Produtos</h3>
+      <div class="products" id="products"></div>
+    </section>
+  </main>
+
+  <!-- CARRINHO -->
+  <aside class="cart" id="cart">
+    <div class="cart-header">
+      <h3>Seu carrinho</h3>
+      <button class="close" onclick="toggleCart()">✖</button>
+    </div>
+
+    <div id="cartItems" class="cart-items"></div>
+
+    <div class="cart-footer">
+      <p><strong>Total:</strong> R$ <span id="cartTotal">0.00</span></p>
+
+      <h4>Finalizar pedido</h4>
+      <input id="nome" placeholder="Seu nome" />
+      <input id="whats" placeholder="Seu WhatsApp" />
+      <input id="endereco" placeholder="Endereço completo" />
+      <input id="bairro" placeholder="Bairro" />
+      <textarea id="obs" placeholder="Observações (opcional)"></textarea>
+
+      <button class="finish-btn" onclick="finalizarPedido()">
+        ✅ Enviar pedido no WhatsApp
+      </button>
+
+      <small>Pagamento: <strong>na entrega</strong></small>
+    </div>
+  </aside>
+
+  <script src="script.js"></script>
+</body>
+</html>
